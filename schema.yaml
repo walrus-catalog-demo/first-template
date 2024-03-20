@@ -1,0 +1,20 @@
+openapi: 3.0.3
+info:
+  title: OpenAPI schema for template .
+components:
+  schemas:
+    variables:
+      type: object
+      required:
+      - image
+      properties:
+        image:
+          title: Image
+          type: string
+          description: The image to use for the Kubernetes deployment.
+          x-walrus-ui:
+            group: Basic
+            order: 1
+      x-walrus-ui:
+        groupOrder:
+        - Basic
